@@ -20,18 +20,17 @@ const FormInput = (props) => {
 
     return (
         <>
-            <div className="main-div">
-                <div className='center_div'>
-                    <br />
-                    <h1> My Todo-List</h1>
-                    <br />
+            <div className="list">
+
                     <input type='text'
                         placeholder='Add an item'
                         value={input}
-                        onChange={handleChange} />
+                        onChange={handleChange} 
+                        />
                     <button type="submit" className="btn" onClick={handleSubmit}>+</button>
-                </div>
-            </div>
+                        </div>
+             
+           
         </>
     )
 }

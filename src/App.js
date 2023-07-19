@@ -32,12 +32,19 @@ function App() {
 
   return (
     <>
+    <div className='main-div'>
+      <div className='center_div'>
+        <br/>
+        <h1> My TodoList</h1>
+        <br/>
       <FormInput addData={addTask} />
       <TodoList
         items={items}
         deleteData={deleteTask}
         completeData={completeTask}
       />
+      </div>
+    </div>
     </>
   );
 
